@@ -46,6 +46,7 @@ def get_menu_images():
             logger.warning(f"Изображение {image_path} не найдено")
     return existing_images
 
+
 # Пути к изображениям меню (поместите ваши изображения в папку 'menu_images')
 MENU_IMAGES_DIR = "menu_images"
 MENU_IMAGES = [
