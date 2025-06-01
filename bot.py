@@ -3,6 +3,9 @@ import os
 from dotenv import load_dotenv
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
+from keep_alive import keep_alive
+
+keep_alive()
 
 # Загружаем переменные окружения из .env
 load_dotenv()
