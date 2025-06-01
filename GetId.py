@@ -1,7 +1,11 @@
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
+from dotenv import load_dotenv
+import os
 
-BOT_TOKEN = "7823203274:AAG0Fqx4kUIV7WQZMojZ60xp4MHWAf1GpLE"
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def get_chat_id(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("Chat ID:", update.effective_chat.id)
